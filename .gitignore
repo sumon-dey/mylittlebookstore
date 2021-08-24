@@ -1,0 +1,90 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.mvn/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Ignore Compiled class files
+*.class
+
+# Ignore Executable files
+*.exe
+
+# Ignore Package Files 
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore Eclipse IDE files
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# Ignore External tool builders
+.externalToolBuilders/
+
+# Ignore PDT-specific
+.buildpath
+
+# Ignore Maven target folder
+target/
+
+# Ignore BlueJ files
+*.ctxt
+
+# Ignore virtual machine crash logs
+hs_err_pid*
+
+# Ignore some other folders
+/.idea
+/output
+/target
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+
+

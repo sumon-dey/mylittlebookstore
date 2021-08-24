@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>My Little Bookstore</title>
+<link th:href="@{/styles/css/updateBook.css}" rel="stylesheet" />
+</head>
+<body>
+	<div class="post">
+		<p class="date">August 23 2021</p>
+		<h2>Book Entry</h2>
+		<form action="updateBook" method="post">
+			<pre>
+		<label for="bookid">Book Id: </label>
+		<input id="bookid" type="text" name="bookid" th:value="${book.bookid}"
+					readonly /> 
+		<label for="bookname">Book Name: </label>
+		<input id="bookname" type="text" name="bookname"
+					th:value="${book.bookname}" /> 
+		<label for="bookauthor">Book Author: </label>
+		<input id="bookauthor" type="text" name="bookauthor"
+					th:value="${book.bookauthor}" />
+		<label for="bookpurchasedate">Book Purchase Date: </label>
+		<input id="bookpurchasedate" type="text" name="bookpurchasedate"
+					th:value="${book.bookpurchasedate}" />
+		<input type="submit" value="save" />
+	</pre>
+		</form>
+	</div>
+</body>
+</html>
