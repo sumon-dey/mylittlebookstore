@@ -1,38 +1,13 @@
 @charset "ISO-8859-1";
 
-/* body{
-	border: 20px solid #bdc3c7;
-	padding: 20px;
-	max-width: 700px;
-	width: 80%;
-	margin: 20px auto;
-	font-family: source sans pro;
-}
-
-h2{
-	color: #2c3e50;
-	font-size: 2.0rem;
-}
-
-.date{
-	text-transform: uppercase;
-	color: #3498db;
-	letter-spacing: 0.2rem;
-}
-
-.post{
-	margin-bottom: 20px;
-} */
-
-
 body{
     background: #E6E0DF;
 }
 
-#header{
+/* section[id='header']{
     background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url([[@{/styles/images/woodgrain.jpg}]]);
     border-bottom: 1px solid black;
-}
+} */
 
 .form-container{
     background: #fff;
