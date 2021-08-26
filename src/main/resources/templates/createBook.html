@@ -2,32 +2,138 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
+<link th:rel="stylesheet" th:href="@{/styles/css/createBook.css}" />
+<link th:rel="stylesheet"
+	th:href="@{/styles/assets/bootstrap/css/bootstrap.min.css} " />
 <title>My Little Bookstore</title>
-<link th:href="@{/styles/css/createBook.css}" rel="stylesheet" />
 </head>
 <body>
+
+	<nav class="navbar bg-dark navbar-dark">
+		<div class="container">
+			<a href="" class="navbar-brand">My Little BookStore</a>
+		</div>
+	</nav>
+
+	<section id="header" class="jumbotron text-center">
+		<h1 class="display-3">My Little Bookstore</h1>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur
+			adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+			dolore magna aliqua.</p>
+		<a href="" class="btn btn-success">Book Entry</a>
+	</section>
+	
+	<!-- Book Entry Form-->
+    <section class="container-fluid">
+        <section class="row justify-content-center">
+            <section class="col-12 col-sm-6 col-md-3">
+                <form class="form-container">
+                    <div class="form-group">
+                        <label for="bookid">Book ID</label>
+                        <input type="text" class="form-control" id="bookid">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookname">Book Name</label>
+                        <input type="text" class="form-control" id="bookname">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookauthor">Book Author</label>
+                        <input type="text" class="form-control" id="bookauthor">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookpurchasedate">Book Purchase Date</label>
+                        <input type="text" class="form-control" id="bookpurchasedate">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Save</button>
+                </form>
+            </section>
+        </section>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- CARDS -->
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{/styles/images/EffectiveJava.jpg}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Effective Java</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{/styles/images/SpecificationByExample.jpg}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Specification By Example</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{/styles/images/ThePragmaticProgrammer.jpg}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">The Pragmatic Programmer</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{/styles/images/Refactoring.jpg}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Refactoring</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	<!-- ---------------------------------------------------------------------------------------------------------------- -->
+
 	<div class="post">
-		<p class="date">August 23 2021</p>
-		<h2>Book Entry</h2>
 		<form action="saveBook" method="post">
 			<pre>
-		<label for="bookid">Book Id: </label>
-		<input id="bookid" type="text" name="bookid" /> 
-		<label for="bookname">Book Name: </label>
-		<input id="bookname" type="text" name="bookname" /> 
-		<label for="bookauthor">Book Author: </label>
-		<input id="bookauthor" type="text" name="bookauthor" />
-		<label for="bookpurchasedate">Book Purchase Date: </label>
-		<input id="bookpurchasedate" type="text" name="bookpurchasedate" />
-		<input type="submit" value="save" />
-	</pre>
+				<label for="bookid">Book Id: </label>
+				<input id="bookid" type="text" name="bookid" /> 
+				<label for="bookname">Book Name: </label>
+				<input id="bookname" type="text" name="bookname" /> 
+				<label for="bookauthor">Book Author: </label>
+				<input id="bookauthor" type="text" name="bookauthor" />
+				<label for="bookpurchasedate">Book Purchase Date: </label>
+				<input id="bookpurchasedate" type="text" name="bookpurchasedate" />
+				<input type="submit" value="save" />
+			</pre>
 		</form>
 		<div>
-			<b th:text="${msg}"></b>
+			<strong th:text="${msg}"></strong>
 		</div>
 		<div>
 			<a href="displayBooks">Show All Books</a>
 		</div>
 	</div>
+
+	<script th:src="@{/styles/assets/jquery/jquery-3.3.1.min.js}"></script>
+	<script th:src="@{/styles/assets/popper/popper.min.js}"></script>
+	<script th:src="@{/styles/assets/bootstrap/js/bootstrap.min.js}"></script>
+
 </body>
 </html>

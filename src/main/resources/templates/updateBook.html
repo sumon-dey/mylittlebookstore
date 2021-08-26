@@ -3,7 +3,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>My Little Bookstore</title>
-<link th:href="@{/styles/css/updateBook.css}" rel="stylesheet" />
+<link th:rel="stylesheet" th:href="@{/styles/css/updateBook.css}" />
+<link th:rel="stylesheet"
+	th:href="@{/styles/assets/bootstrap/css/bootstrap.min.css} " />
 </head>
 <body>
 	<div class="post">
@@ -27,5 +29,10 @@
 	</pre>
 		</form>
 	</div>
+
+	<script th:src="@{/styles/assets/jquery/jquery-3.3.1.min.js}"></script>
+	<script th:src="@{/styles/assets/popper/popper.min.js}"></script>
+	<script th:src="@{/styles/assets/bootstrap/js/bootstrap.min.js}"></script>
+
 </body>
 </html>
