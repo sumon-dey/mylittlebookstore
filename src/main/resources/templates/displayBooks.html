@@ -8,30 +8,46 @@
 	th:href="@{/styles/assets/bootstrap/css/bootstrap.min.css} " />
 </head>
 <body>
-	<h2>Books</h2>
-	<table th:border="2">
-		<tr>
-			<th>Book ID</th>
-			<th>Book Name</th>
-			<th>Book Author</th>
-			<th>Book Purchase Date</th>
-		</tr>
-		<tr th:each="book:${books}">
-			<td th:text=${book.bookid}></td>
-			<td th:text=${book.bookname}></td>
-			<td th:text=${book.bookauthor}></td>
-			<td th:text=${book.bookpurchasedate}></td>
-			<td><a th:href="@{'deleteBook?id=' + ${book.bookid}}">delete</a></td>
-			<td><a th:href="@{'showUpdate?id=' + ${book.bookid}}">edit</a></td>
-		</tr>
-	</table>
-	<div>
-		<a href="showCreate">Add Book</a>
-	</div>
+
+	<nav class="navbar bg-dark navbar-dark">
+		<div class="container">
+			<a href="" class="navbar-brand">My Little BookStore</a>
+		</div>
+	</nav>
 	
+	<br>
+
+	<section class="container-fluid">
+		<section class="row justify-content-center">
+			<section class="col-12 col-sm-6 col-md-3">
+				<h2>Books</h2>
+				<br>
+				<table th:border="2">
+					<tr>
+						<th>Book ID</th>
+						<th>Book Name</th>
+						<th>Book Author</th>
+						<th>Book Purchase Date</th>
+					</tr>
+					<tr th:each="book:${books}">
+						<td th:text=${book.bookid}></td>
+						<td th:text=${book.bookname}></td>
+						<td th:text=${book.bookauthor}></td>
+						<td th:text=${book.bookpurchasedate}></td>
+						<td><a th:href="@{'deleteBook?id=' + ${book.bookid}}">delete</a></td>
+						<td><a th:href="@{'showUpdate?id=' + ${book.bookid}}">edit</a></td>
+					</tr>
+				</table>
+				<div>
+					<a href="showCreate">Add Book</a>
+				</div>
+			</section>
+		</section>
+	</section>
+
 	<script th:src="@{/styles/assets/jquery/jquery-3.3.1.min.js}"></script>
 	<script th:src="@{/styles/assets/popper/popper.min.js}"></script>
 	<script th:src="@{/styles/assets/bootstrap/js/bootstrap.min.js}"></script>
-	
+
 </body>
 </html>

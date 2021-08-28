@@ -19,9 +19,8 @@
 
 	<section id="header" class="jumbotron text-center">
 		<h1 class="display-3">My Little Bookstore</h1>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur
-			adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-			dolore magna aliqua.</p>
+		<p class="lead">Welcome to My Little Bookstore where I store all
+			my book-related information.</p>
 		<a href="" class="btn btn-success">Book Entry</a>
 	</section>
 
@@ -48,8 +47,10 @@
 							name="bookpurchasedate">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Save</button>
-					<strong th:text="${msg}"></strong>
-					<a href="displayBooks">Show All Books</a>
+					<strong th:text="${msg}"></strong> 
+					<br>
+					<a href="displayBooks">Show
+						All Books</a>
 				</form>
 			</section>
 		</section>
@@ -65,8 +66,8 @@
 			<div class="row">
 				<div class="col-12 col-sm-6 col-md-3 mb-4">
 					<div class="card">
-						<img class="card-img-top"
-							th:src="@{/styles/images/EffectiveJava.jpg}" alt="">
+						<img class="card-img-top" th:src="@{/images/EffectiveJava.jpg}"
+							alt="">
 						<div class="card-body">
 							<h5 class="card-title">Effective Java</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -79,7 +80,7 @@
 				<div class="col-12 col-sm-6 col-md-3 mb-4">
 					<div class="card">
 						<img class="card-img-top"
-							th:src="@{/styles/images/SpecificationByExample.jpg}" alt="">
+							th:src="@{/images/SpecificationByExample.jpg}" alt="">
 						<div class="card-body">
 							<h5 class="card-title">Specification By Example</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -92,7 +93,7 @@
 				<div class="col-12 col-sm-6 col-md-3 mb-4">
 					<div class="card">
 						<img class="card-img-top"
-							th:src="@{/styles/images/ThePragmaticProgrammer.jpg}" alt="">
+							th:src="@{/images/ThePragmaticProgrammer.jpg}" alt="">
 						<div class="card-body">
 							<h5 class="card-title">The Pragmatic Programmer</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -104,8 +105,8 @@
 				</div>
 				<div class="col-12 col-sm-6 col-md-3 mb-4">
 					<div class="card">
-						<img class="card-img-top"
-							th:src="@{/styles/images/Refactoring.jpg}" alt="">
+						<img class="card-img-top" th:src="@{/images/Refactoring.jpg}"
+							alt="">
 						<div class="card-body">
 							<h5 class="card-title">Refactoring</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
